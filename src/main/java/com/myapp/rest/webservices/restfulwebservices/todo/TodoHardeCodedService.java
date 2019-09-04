@@ -5,6 +5,7 @@ import org.springframework.stereotype.Service;
 import java.util.ArrayList;
 import java.util.Date;
 import java.util.List;
+import java.util.Optional;
 
 @Service
 public class TodoHardeCodedService {
@@ -23,7 +24,7 @@ public class TodoHardeCodedService {
     }
 
     public Todo save (Todo todo){
-        if(todo.getId() == -1){
+        if(todo.getId() == null){
             todo.setId(++idCounter);
             todos.add(todo);
         } else {
