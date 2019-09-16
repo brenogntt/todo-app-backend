@@ -1,4 +1,4 @@
-package com.myapp.rest.webservices.restfulwebservices;
+package com.myapp.rest.basicauth;
 
 import org.junit.Test;
 import org.junit.runner.RunWith;
